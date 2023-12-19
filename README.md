@@ -33,3 +33,4 @@ The given code implements a C program that finds and prints the three largest el
    - The three largest elements in this array are found and printed by the `print3largest` function.
 
 In simple terms, the algorithm finds the three largest numbers in an array by iterating through the array and updating the largest, second largest, and third largest numbers as it goes. Finally, it prints these three most significant numbers.
+![Screenshot (254)](https://github.com/ankita430/geekforgeeks_problem_practice/assets/141404641/dd9c263f-134b-4ea4-8f66-37bb703bbc0d)
