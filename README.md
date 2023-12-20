@@ -1,5 +1,5 @@
 # geekforgeeks_problem_practice
-Holiday Journal for OOP&amp;DS practice - In this journal problems from geeks for geeks website have explained. 
+Holiday Journal for OOP&DS practice - In this journal problems from geeks for geeks website have explained. 
 
 ' ' '
 ## 1__Find the largest three elements in an array
@@ -34,3 +34,42 @@ The given code implements a C program that finds and prints the three largest el
 
 In simple terms, the algorithm finds the three largest numbers in an array by iterating through the array and updating the largest, second largest, and third largest numbers as it goes. Finally, it prints these three most significant numbers.
 ![Screenshot (254)](https://github.com/ankita430/geekforgeeks_problem_practice/assets/141404641/dd9c263f-134b-4ea4-8f66-37bb703bbc0d)
+
+' ' '
+## 2_Find Second largest element in an array
+### Algorithm
+**Algorithm to Find Index of Second Largest Element:**
+
+1. **Check Array Size:**
+   - If the size of the array (`n`) is less than 2, print a message saying "Array should have at least two elements" and return -1.
+
+2. **Initialize Variables:**
+   - Initialize two variables, `a` and `b`.
+     - `a` represents the index of the largest element (initially set to 0).
+     - `b` represents the index of the second-largest element (initially set to -1).
+
+3. **Iterate Through the Array:**
+   - Start a loop from index 1 to `n-1` to traverse the array.
+   
+4. **Compare with Largest Element (`arr[a]`):**
+   - If the element at the current index (`arr[i]`) is greater than the element at the largest element's index (`arr[a]`):
+     - Update `b` to the current index (`b = a`).
+     - Update `a` to the current index (`a = i`).
+
+5. **Check for Different Element:**
+   - If the element at the current index is not equal to the element at the largest element's index:
+     - Check if `b` is -1 or the element at the current index is greater than the element at the second-largest element's index (`arr[b]`).
+     - If true, update `b` to the current index (`b = i`).
+
+6. **Return Result:**
+   - After the loop, return the value of `b`. This represents the index of the second-largest element in the array.
+
+7. **Check for Non-Existence:**
+   - In the `main` function, check if the result is -1. If true, print "Second largest element doesn't exist."
+   - If false, print "Index of the second largest element: [result]."
+
+This algorithm aims to find the index of the second-largest element in the given array. It uses two variables to keep track of the largest and second-largest elements while iterating through the array.
+![Screenshot (255)](https://github.com/ankita430/geekforgeeks_problem_practice/assets/141404641/3e500117-a234-4b9d-8709-46c5af249536)
+
+' ' ' 
+
