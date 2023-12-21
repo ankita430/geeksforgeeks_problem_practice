@@ -38,33 +38,33 @@ In simple terms, the algorithm finds the three largest numbers in an array by it
 ' ' '
 ## 2_Find Second largest element in an array
 ### Algorithm
-**Algorithm to Find Index of Second Largest Element:**
+Algorithm to Find Index of Second Largest Element:
 
-1. **Check Array Size:**
+1. Check Array Size:
    - If the size of the array (`n`) is less than 2, print a message saying "Array should have at least two elements" and return -1.
 
-2. **Initialize Variables:**
+2. Initialize Variables:
    - Initialize two variables, `a` and `b`.
      - `a` represents the index of the largest element (initially set to 0).
      - `b` represents the index of the second-largest element (initially set to -1).
 
-3. **Iterate Through the Array:**
+3. Iterate Through the Array:
    - Start a loop from index 1 to `n-1` to traverse the array.
    
-4. **Compare with Largest Element (`arr[a]`):**
+4. Compare with Largest Element (`arr[a]`):
    - If the element at the current index (`arr[i]`) is greater than the element at the largest element's index (`arr[a]`):
      - Update `b` to the current index (`b = a`).
      - Update `a` to the current index (`a = i`).
 
-5. **Check for Different Element:**
+5. Check for Different Element:
    - If the element at the current index is not equal to the element at the largest element's index:
      - Check if `b` is -1 or the element at the current index is greater than the element at the second-largest element's index (`arr[b]`).
      - If true, update `b` to the current index (`b = i`).
 
-6. **Return Result:**
+6. Return Result:
    - After the loop, return the value of `b`. This represents the index of the second-largest element in the array.
 
-7. **Check for Non-Existence:**
+7. Check for Non-Existence:
    - In the `main` function, check if the result is -1. If true, print "Second largest element doesn't exist."
    - If false, print "Index of the second largest element: [result]."
 
@@ -73,3 +73,28 @@ This algorithm aims to find the index of the second-largest element in the given
 
 ' ' ' 
 
+## 3_Move all zeroes to end of array
+### Algorithm
+Algorithm: moveZerosToEnd
+
+Input:
+- arr: an array of integers
+- n: the size of the array
+
+Output:
+- None (the function modifies the input array in-place)
+
+Steps:
+1. Initialize a variable count to 0.
+2. Iterate through the array using a loop with the index i from 0 to n-1.
+   a. If arr[i] is not equal to 0, assign arr[i] to arr[count] and increment count.
+3. After the loop, run another loop while count is less than n.
+   a. Assign 0 to arr[count] and increment count.
+4. The function has now moved all non-zero elements to the beginning of the array and filled the remaining positions with zeros.
+
+Example:
+Consider the input array arr[] = {1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9}.
+After calling moveZerosToEnd(arr, n), the array will be modified to {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 0}.
+![Screenshot (256)](https://github.com/ankita430/geeksforgeeks_problem_practice/assets/141404641/eb9e7904-e658-4439-ae2b-ca7fd404a8b5)
+
+' ' '
